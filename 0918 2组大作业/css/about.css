@@ -1,0 +1,87 @@
+.section-price,.whatwe{
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+.section-price .row>div{
+    width: 33.3333333%;
+}
+.bus-easy{
+    padding: 70px 0;
+    background-image: url('../images/parallax-6.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bus-easy h2,.bus-easy p{
+    color: #fff;
+}
+.bus-easy .container>div{
+    text-align: center;
+}
+.bus-easy a{
+    color: #fff;
+    background-color: #18ba60;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+.bus-easy a:hover{
+    background-color: #3b526b;
+}
+.whatwe .row>div{
+    float: left;
+    width: 33.33333%;
+    padding: 0 15px;
+}
+.whatwe .row>div>div{
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+    border: 1px solid #e6e6e6;
+    transition: all .3s;
+}
+.what-inner{
+    padding: 30px;
+}
+.what-inner>div{
+    float: left;
+}
+.what-inner>div:first-child{
+    width: 80%;
+}
+.what-inner>div:nth-child(2){
+    width: 20%;
+}
+.whatwe .row>div>div h4{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 150%;
+}
+.whatwe .row>div>div p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #909090;
+    margin-top: 5px;
+}
+.whatwe .row>div>div a{
+    display: inline-block;
+    color: #18ba60;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid #18ba60;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+}
+.whatwe .row>div>div:hover{
+    box-shadow: 10px 5px 90px 0 rgb(26 38 74 / 13%);
+}
+.whatwe .row>div>div:hover a{
+    color: #fff;
+    background-color: #18ba60;
+}

@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .clearfix:before,
+  .clearfix:after {
+      content: "";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0;
+      font-size: 0;
+  }
+  
+  .clearfix {
+      *zoom: 1;
+  }
+  ul,li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    transition: all .3s;
+  }
+  body{
+    font-size: 14px;
+    color: #3b3b3b;
+    font-family: Nunito,sans-serif;
+  }
+  .container{
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .header-top{
+    background-color: #3b526b;
+    border-bottom:1px solid #eee;
+  }
+  .header-top .htop-left{
+    float: left;
+  }
+  .header-top .htop-left span{
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 16px 16px 16px 0;
+  }
+  .header-top .htop-left span i{
+    font-size: 15px;
+    color: #18ba60;
+    padding-right: 8px;
+  }
+  .header-top .htop-right{
+    float: right;
+  }
+  .header-top .htop-right a{
+    display: block;
+    color: #fff;
+    background-color: #18ba60;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 25px;
+  
+  }
+  .header-top .htop-right a:hover{
+    background-color: #2d4358;
+  }
+  
+  .header-bot{
+    background-color: #fff;
+  }
+  .headerfix{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 6px 0 rgb(20 20 20 / 5%);
+    z-index: 9999;
+  }
+  .header-bot .logo{
+    float: left;
+    padding: 25px 0;
+    height: 50px;
+  }
+  .header-bot .logo img{
+    margin-left: 15px;
+    max-height: 50px;
+  }
+  .header-bot .navbar{
+    float: right;
+  }
+  .header-bot .navbar>ul>li{
+    float: left;
+    padding: 25px 5px;
+    position: relative;
+  }
+  .header-bot .navbar>ul>li>a{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 15px;
+    color: #3b3b3b;
+    letter-spacing: .5px;
+    line-height: 20px;
+  }
+  .header-bot .navbar>ul>li>a i{
+    font-weight: 700;
+    padding-left: 2px;
+  }
+  .header-bot .navbar>ul>li>a.active{
+    color: #18ba60;
+  }
+  .header-bot .navbar>ul>li>a:hover{
+    color:  #18ba60;
+  }
+  .navbar .dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 999;
+    display: none;
+    opacity: 0;
+    transition: all .3s;
+  }
+  .navbar .dropdown a{
+    display: inline-block;
+    width: 200px;
+    padding: 12px;
+    font-weight: 700;
+    color: #444;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .navbar .dropdown a.active{
+    color: #18ba60;
+  }
+  .navbar .dropdown a:hover{
+    background-color: #18ba60;
+    color: #fff;
+  }
+
+  .page-title{
+    padding: 70px 0;
+    background-image: url('../images/parallax-5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .page-title .container>div{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+  .page-title h2{
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  .page-title a{
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .page-title a:hover{
+    color: #18ba60;
+  }
+
+  .team-num{
+    padding: 100px 0;
+    background-color: #fff;
+  }
+  .team-num .row>div{
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+  }
+  .team-num .row>div>div{
+    padding: 30px 0 15px;
+  }
+  .team-num .row .team-peo{
+    margin: 15px 0;
+    position: relative;
+  }
+  .team-num .row>div>div:hover .team-hover{
+    opacity: 1;
+  }
+  .team-num .row>div>div:hover .team-hover i{
+      animation-name: fadeInDown;
+      animation-duration: .4s;
+      animation-timing-function: ease-out;
+  }
+  .team-hover{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 30%;
+    transition: all .5s;
+    opacity: 0;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(58,82,106,.9) 100%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .team-hover>div{
+    font-size: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .team-hover>div a{
+    color: #fff;
+  }
+  .team-hover>div a:hover i{
+    color: #18ba60;
+  }
+  .team-hover>div a i{
+    color: #fff;
+    padding: 7px;
+    transition: all .3s;
+  }
+  .team-num .row .team-peo img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .team-name{
+    text-align: center;
+  }
+  .team-name h4{
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+  .team-name span{
+    font-size: 13px;
+    font-weight: 600;
+    color: #b1b1b1;
+    margin-top: 5px;
+    text-transform: uppercase;
+  }
+  .main-title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  .main-wenzi{
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #b1b1b1;
+  }
+  .row{
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .section-price{
+    padding: 100px 0;
+    background-color: #fff;
+}
+.section-price .row>div{
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+}
+.section-price .row>div>div{
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    margin: 15px 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.section-price .row .price-inner{
+    padding: 30px;
+}
+.section-price .row .price-info{
+    padding-top: 30px;
+    border-top: 1px solid #e6e6e6;
+    margin-top: 30px;
+}
+.price-inner h4{
+    font-size: 25px;
+    font-weight: 500;
+}
+.price-inner h3{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.price-inner p{
+    margin: 12px 0 15px;
+    font-size: 15px;
+    color: #676767;
+}
+.price-info p i{
+    color: #18ba60;
+}
+.price-info p span{
+    margin-left: 20px;
+}
+.price-btn a{
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    padding: 12px 15px;
+    background-color: #18ba60;
+    text-align: center;
+}
+.price-btn a:hover{
+    background-color: #3b526b;
+}

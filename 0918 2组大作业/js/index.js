@@ -1,5 +1,5 @@
 $(function () {
-    document.querySelector('.late-con .active').click()
+    // document.querySelector('.late-con .all').click()
     //初始化Swipper
     var mySwiper1 = new Swiper('.swiper-container1', {
         // direction: 'vertical', // 垂直切换选项
@@ -205,6 +205,7 @@ $(function () {
     var $container = $('#container').isotope({
         // options
     });
+    $container.isotope({ filter: '*' });
     // filter items on button click
     $('#filters').on('click', 'button', function () {
         var filterValue = $(this).attr('data-filter');

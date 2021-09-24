@@ -47,6 +47,7 @@
   position: absolute;
   height: 505px;
   background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   left: 0;
   /* z-index: 0; */
@@ -273,6 +274,7 @@
   background-image: url('../images/parallax-1.jpg');
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .numbers .row>div{
   float: left;

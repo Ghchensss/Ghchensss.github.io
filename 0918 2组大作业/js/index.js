@@ -1,7 +1,5 @@
 $(function () {
-    (function(){
-        document.querySelector('.late-con .late-btn.active').click()
-    })()
+    document.querySelector('.late-con .active').click()
     //初始化Swipper
     var mySwiper1 = new Swiper('.swiper-container1', {
         // direction: 'vertical', // 垂直切换选项
